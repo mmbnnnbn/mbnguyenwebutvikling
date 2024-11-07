@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="/ikoner/fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet" />
+    <link href="/ikoner/fontawesome-free-6.6.0-web/css/brands.css" rel="stylesheet" />
+    <link href="/ikoner/fontawesome-free-6.6.0-web/css/solid.css" rel="stylesheet" />
+    <link href="/ikoner/fontawesome-free-6.6.0-web/css/regular.css" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/main.css">
+</head>
+<body>
+    <header id="globalheader">
+        <nav>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="index.html#popular_products">Produkter</a></li>
+                <li><a href="index.html#popular_categories">Kategorier</a></li>
+                <li><a href="#global_footer">Kontakt Oss</a></li>
+                <li><a href="index.html">Logo</a></li>
+            </ul>
+        </nav>
+        <i class="fa-regular fa-user"></i>
+        <i class="fa-regular fa-heart"></i>
+        <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>       
+    </header>
+<main>
+    <section id="shoppingbag1">
+        <h2>1. SHOPPINGBAGEN DIN</h2>
+        <article>
+            <img src="#" alt="produkt">
+            <h3>Product name</h3>
+            <p>Kr 1999</p>
+            <p>Farge: Beige</p>
+            <!--mer (str)-->
+        </article>
+        <article>
+            <img src="#" alt="produkt">
+            <h3>Product name</h3>
+            <p>Kr 1999</p>
+            <p>Farge: Beige</p>
+            <!--mer (str)-->
+        </article>
+    </section>
+    <section id="personopplysning2">
+        <h2>2. DINE OPPLYSNINGER</h2>
+        <form>
+            <fieldset>
+                <legend>Leveringsadresse</legend>
+                <label>
+                    Fornavn
+                    <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required id="Fornavn" name="Fornavn" placeholder="Nora*">
+                </label>
+                <label>
+                    Etternavn
+                    <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required id="Etternavn" name="Etternavn" placeholder="Nordmann*">
+                </label>
+                <label>
+                    Gateadresse
+                    <input type="text" maxlength="100" required placeholder="BRA Veien 4*">                    
+                </label>
+                <label>
+                    Postnummer
+                </label>
+                <label>
+                    Poststed
+                </label>
+                <label>
+                    Lagre 
+                </label>
+            </fieldset>
+        </form>
+    </section>
+    <section id="levering3">
+        <h2>3. LEVERING</h2>
+        <form>
+            <label>
+                Leveringsmetode
+                <select name="Leveringsmetode" id="Leveringsmetode" size="3">
+                    <option value="ExpressHjem">Express Hjemlevering <span>3-4 Virkedager</span></option>
+                    <option value="ExpressUtlevering">Express Pakke til utleveringssted <span>1-3 Virkedager</span></option>
+                    <option value="StandardHjem">Standard Hjemlevering <span>5-8 Virkedager</span></option>
+                </select>
+            </label>
+        </form>
+    </section>
+    <section id="betaling4">
+        <form>
+            <fieldset>
+                <legend>BETAL MED KORT</legend>
+                <label>
+                    Kortnummer
+                    <input type="tel" maxlength="20" required placeholder="342342****4435">
+                </label>
+                <label>
+                    Utløpsdato
+                    <input type="date">
+                </label>
+                <label>
+                    CVC/CVV
+                    <input type="tel" maxlength="3" required placeholder="CVC/CVV" >
+                </label>
+                <p>Å betale inkl. mva.</p>
+                <p>1 199 kr</p>
+                <a href="#">Fullfør kjøp</a>
+                <p>Du bekrefter herved at opplysningene og dokumentene du har
+                    oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
+                    retten til å heve eller avslutte avtaleforholdet dersom det foreligger
+                    uriktige eller ufullstendige opplysninger.</p>
+                <label>
+                    <input type="checkbox" name="nyhet" id="nyhet">
+                    Ja takk! Send nyhetsbrev til meg 
+                </label>
+                <label>
+                    <input type="checkbox" name="vilkar" id="vilkar">
+                    Ja, jeg godtar vilkårene
+                </label>
+            </fieldset>
+        </form>
+    </section>
+</main>
+</body>
+</html>
