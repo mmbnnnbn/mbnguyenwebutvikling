@@ -4,92 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
-    <link href="/ikoner/fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet" />
-        <link href="/ikoner/fontawesome-free-6.6.0-web/css/brands.css" rel="stylesheet" />
-        <link href="/ikoner/fontawesome-free-6.6.0-web/css/solid.css" rel="stylesheet" />
-        <link href="/ikoner/fontawesome-free-6.6.0-web/css/regular.css" rel="stylesheet">
-        <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="ikoner/fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet" />
+        <link href="ikoner/fontawesome-free-6.6.0-web/css/brands.css" rel="stylesheet" />
+        <link href="ikoner/fontawesome-free-6.6.0-web/css/solid.css" rel="stylesheet" />
+        <link href="ikoner/fontawesome-free-6.6.0-web/css/regular.css" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/main.css">
 </head>
 <body>
-    <header id="globalheader">
-        <nav>
-            <ul>
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="index.html#popular_products">Produkter</a></li>
-                <li><a href="index.html#popular_categories">Kategorier</a></li>
-                <li><a href="#global_footer">Kontakt Oss</a></li>
-                <li><a href="index.html">Logo</a></li>
-            </ul>
-        </nav>
-        <i class="fa-regular fa-user"></i>
-        <i class="fa-regular fa-heart"></i>
-        <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>       
-    </header>
-<main>
-    <nav>
-        <ul>
-            <li><a href="index.html">Hjem ></a></li>
-            <li><a href="#">Kategori ></a></li>
-            <li>Produktnavn</li>
-        </ul>
-    </nav>
-    <article>
-        <section>
-            <img src="#" alt="Stor">
-            <img src="#" alt="Liten">
-            <img src="#" alt="Liten">
-            <img src="#" alt="Liten">
-        </section>
-        <section>
-            <h1>Produktnavn</h1>
-            <a href="#">Merkenavn</a>
-            <p>10 000kr inkl mva.</p>
-            <p>Farge: beige</p>
+    <div>
+        <header id="globalheader">
+            <nav>
+                <form>
+                    <label aria-label="Søk">
+                        <input type="search" placeholder="Søk her">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                </form>
+                <ul class="main_nav">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="#popular_products">Produkter</a></li>
+                    <li><a href="index.html" id="logo">Logo</a></li>
+                    <li><a href="#popular_categories">Kategorier</a></li>
+                    <li><a href="#global_footer">Kontakt Oss</a></li>
+                </ul>
 
-            <form>
-                <label for="size">Size</label>
-                <select name="size" id="size" required>
-                    <option value=""disabled selected>Pick your size</option>
-                    <option value="XS">XS</option>
-                    <option value="S">S</option>
-                    <option value="M">M</option>
-                    <option value="L">L</option>
-                    <option value="XL">XL</option>
-                </select>
-            </form>
-            <!--mer skal legges hjerte -->
-        </section>
-    </article>
+                <ul class="header_icons">
+                    <li><i class="fa-regular fa-user"></i></li>
+                    <li><i class="fa-regular fa-heart"></i></li>
+                    <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hjem <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="index.html#popular_categories">Kategori <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><p>Produktnavn</p></li>
+                </ul>
+            </nav>
+            <article>
+                <section>
+                    <img src="https://picsum.photos/400" alt="Stor">
+                    <img src="https://picsum.photos/400" alt="Liten">
+                    <img src="https://picsum.photos/400" alt="Liten">
+                    <img src="https://picsum.photos/400" alt="Liten">
+                </section>
+                <section id="kontaktinformasjon">
+                    <h1>Produktnavn</h1>
+                    <a href="#">Merkenavn</a>
+                    <p>10 000kr inkl mva.</p>
+                    <p>Farge: beige</p>
 
-    <aside>
-        <h2>Lignende produkter</h2>
+                    <form>
+                        <label for="size">Size</label>
+                        <select name="size" id="size" required>
+                            <option value="" disabled selected>Pick your size</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </form>
+                    <!--mer skal legges hjerte legg til handlekurv også-->
+                </section>
+            </article>
+            <aside>
+                <h2>Lignende produkter</h2>
+                    <article>
+                        <img src="https://picsum.photos/200/300" alt="produktkort">
+                        <h3>Productname</h3>
+                        <p>Kr 1999</p>
+                    </article>
+                    <article>
+                        <img src="https://picsum.photos/200/300" alt="produktkort">
+                        <h3>Productname</h3>
+                        <p>Kr 1999</p>
+                    </article>
+                    <article>
+                        <img src="https://picsum.photos/200/300" alt="produktkort">
+                        <h3>Productname</h3>
+                        <p>Kr 1999</p>
+                    </article>
+                    <article>
+                        <img src="https://picsum.photos/200/300" alt="produktkort">
+                        <h3>Productname</h3>
+                        <p>Kr 1999</p>
+                    </article>
+            </aside>
+        </main>
+        <footer id="global_footer">
+            <section id="logo_og_ingress">
+                <a href="index.html">Logo</a>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </section>
 
-        <article> <!--popular category 4 av de her-->
-            
-        </article>
+            <section id="contact">
+                <h4>Kontakt</h4>
+                <p><span>Adresse:</span> B R A Veien 4, 1753 Halden</p>
+                <p>Telefon: 69 80 00 00</p>
+                <p>E-post: halden@hiof.no</p>
+                <p>Åpningstider: Stenger 15:00</p>
+            </section>
 
-        
+            <section id="snarvei">
+                <h4>Snarveier</h4>
+                <a href="#popular_products">Produkter</a>
+                <a href="#popular_categories">Kategorier</a>
+                <a href="#global_footer">Kontakt Oss</a>
+            </section>
 
-
-    </aside>
-</main>
-    <footer id="global_footer">
-        <section id="logo_og_ingress">
-
-        </section>
-
-        <section id="contact">
-
-        </section>
-
-        <section id="snarvei">
-
-        </section>
-
-        <section id="sosiale_medier">
-
-        </section>
-
-    </footer>
+            <section id="sosiale_medier">
+                <h4>Sosiale medier</h4>
+                <a href="index.html"><i class="fa-brands fa-instagram"></i></a>
+                <a href="index.html"><i class="fa-brands fa-facebook"></i></a>
+                <a href="index.html"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="index.html"><i class="fa-brands fa-pinterest"></i></a>
+            </section>
+        </footer>
+    </div>
 </body>
 </html>

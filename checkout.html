@@ -4,121 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
-    <link href="/ikoner/fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet" />
-    <link href="/ikoner/fontawesome-free-6.6.0-web/css/brands.css" rel="stylesheet" />
-    <link href="/ikoner/fontawesome-free-6.6.0-web/css/solid.css" rel="stylesheet" />
-    <link href="/ikoner/fontawesome-free-6.6.0-web/css/regular.css" rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="ikoner/fontawesome-free-6.6.0-web/css/fontawesome.css" rel="stylesheet" />
+    <link href="ikoner/fontawesome-free-6.6.0-web/css/brands.css" rel="stylesheet" />
+    <link href="ikoner/fontawesome-free-6.6.0-web/css/solid.css" rel="stylesheet" />
+    <link href="ikoner/fontawesome-free-6.6.0-web/css/regular.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/main.css">
 </head>
 <body>
-    <header id="globalheader">
-        <nav>
-            <ul>
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="index.html#popular_products">Produkter</a></li>
-                <li><a href="index.html#popular_categories">Kategorier</a></li>
-                <li><a href="#global_footer">Kontakt Oss</a></li>
-                <li><a href="index.html">Logo</a></li>
-            </ul>
-        </nav>
-        <i class="fa-regular fa-user"></i>
-        <i class="fa-regular fa-heart"></i>
-        <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>       
-    </header>
-<main>
-    <section id="shoppingbag1">
-        <h2>1. SHOPPINGBAGEN DIN</h2>
-        <article>
-            <img src="#" alt="produkt">
-            <h3>Product name</h3>
-            <p>Kr 1999</p>
-            <p>Farge: Beige</p>
-            <!--mer (str)-->
-        </article>
-        <article>
-            <img src="#" alt="produkt">
-            <h3>Product name</h3>
-            <p>Kr 1999</p>
-            <p>Farge: Beige</p>
-            <!--mer (str)-->
-        </article>
-    </section>
-    <section id="personopplysning2">
-        <h2>2. DINE OPPLYSNINGER</h2>
-        <form>
-            <fieldset>
-                <legend>Leveringsadresse</legend>
-                <label>
-                    Fornavn
-                    <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required id="Fornavn" name="Fornavn" placeholder="Nora*">
-                </label>
-                <label>
-                    Etternavn
-                    <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required id="Etternavn" name="Etternavn" placeholder="Nordmann*">
-                </label>
-                <label>
-                    Gateadresse
-                    <input type="text" maxlength="100" required placeholder="BRA Veien 4*">                    
-                </label>
-                <label>
-                    Postnummer
-                </label>
-                <label>
-                    Poststed
-                </label>
-                <label>
-                    Lagre 
-                </label>
-            </fieldset>
-        </form>
-    </section>
-    <section id="levering3">
-        <h2>3. LEVERING</h2>
-        <form>
-            <label>
-                Leveringsmetode
-                <select name="Leveringsmetode" id="Leveringsmetode" size="3">
-                    <option value="ExpressHjem">Express Hjemlevering <span>3-4 Virkedager</span></option>
-                    <option value="ExpressUtlevering">Express Pakke til utleveringssted <span>1-3 Virkedager</span></option>
-                    <option value="StandardHjem">Standard Hjemlevering <span>5-8 Virkedager</span></option>
-                </select>
-            </label>
-        </form>
-    </section>
-    <section id="betaling4">
-        <form>
-            <fieldset>
-                <legend>BETAL MED KORT</legend>
-                <label>
-                    Kortnummer
-                    <input type="tel" maxlength="20" required placeholder="342342****4435">
-                </label>
-                <label>
-                    Utløpsdato
-                    <input type="date">
-                </label>
-                <label>
-                    CVC/CVV
-                    <input type="tel" maxlength="3" required placeholder="CVC/CVV" >
-                </label>
-                <p>Å betale inkl. mva.</p>
-                <p>1 199 kr</p>
-                <a href="#">Fullfør kjøp</a>
-                <p>Du bekrefter herved at opplysningene og dokumentene du har
-                    oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
-                    retten til å heve eller avslutte avtaleforholdet dersom det foreligger
-                    uriktige eller ufullstendige opplysninger.</p>
-                <label>
-                    <input type="checkbox" name="nyhet" id="nyhet">
-                    Ja takk! Send nyhetsbrev til meg 
-                </label>
-                <label>
-                    <input type="checkbox" name="vilkar" id="vilkar">
-                    Ja, jeg godtar vilkårene
-                </label>
-            </fieldset>
-        </form>
-    </section>
-</main>
+    <div>
+        <header id="globalheader">
+            <nav>
+                <form>
+                    <label aria-label="Søk">
+                        <input type="search" placeholder="Søk her">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                </form>
+                <ul class="main_nav">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="#popular_products">Produkter</a></li>
+                    <li><a href="index.html" id="logo">Logo</a></li>
+                    <li><a href="#popular_categories">Kategorier</a></li>
+                    <li><a href="#global_footer">Kontakt Oss</a></li>
+                </ul>
+
+                <ul class="header_icons">
+                    <li><i class="fa-regular fa-user"></i></li>
+                    <li><i class="fa-regular fa-heart"></i></li>
+                    <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Kasse</h1>
+            <section id="shoppingbag1">
+                <h2>1. SHOPPINGBAGEN DIN</h2>
+                <article>
+                    <img src="https://picsum.photos/200/300" alt="produkt">
+                    <h3>Product name</h3>
+                    <p>Kr 1999</p>
+                    <p>Farge: Beige</p>
+                    <!--mer (str)-->
+                </article>
+                <article>
+                    <img src="https://picsum.photos/200/300" alt="produkt">
+                    <h3>Product name</h3>
+                    <p>Kr 1999</p>
+                    <p>Farge: Beige</p>
+                    <!--mer (str)-->
+                </article>
+            </section>
+
+            <section id="personopplysning2">
+                <h2>2. DINE OPPLYSNINGER</h2>
+                <form>
+                    <fieldset>
+                        <legend>Leveringsadresse</legend>
+                            <label>
+                                Fornavn
+                                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required id="Fornavn" name="Fornavn" maxlength="20" placeholder="Nora*">
+                            </label>
+                            <label>
+                            Etternavn
+                                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required id="Etternavn" name="Etternavn" maxlength="20" placeholder="Nordmann*">
+                            </label>
+                            <label>
+                                Gateadresse
+                                <input type="text" maxlength="100" required placeholder="BRA Veien 4*">                    
+                            </label>
+                            <label>
+                                Postnummer
+                                <input type="tel" maxlength="4" required placeholder="1752*">
+                            </label>
+                            <label>
+                                Poststed
+                                <input type="text" pattern="[A-Za-zæøåÆØÅ ]{2,}" required id="Poststed" name="Poststed" maxlength="20" placeholder="Halden*">
+                            </label>
+                            
+                            <fieldset>
+                                <legend>Kontaktinformasjon</legend>
+                                <label>
+                                    E-post
+                                    <input type="email" required placeholder="Noranordmann@hiof.no*">
+                                </label>
+                                <label>
+                                    Telefon
+                                    <input type="text" required placeholder="+471234**78">
+                                </label>
+                            </fieldset>
+                            <a href="#">Lagre</a>
+                            <a href="#">Avbryt</a>
+                    </fieldset>
+                </form>
+            </section>
+            <section id="levering3">
+                <h2>3. LEVERING</h2>
+                <form>
+                    <label>
+                        Leveringsmetode
+                        <select name="Leveringsmetode" id="Leveringsmetode" size="3">
+                            <option value="ExpressHjem">Express Hjemlevering 3-4 Virkedager</option>
+                            <option value="ExpressUtlevering">Express Pakke til utleveringssted 1-3 Virkedager</option>
+                            <option value="StandardHjem">Standard Hjemlevering 5-8 Virkedager</option>
+                        </select>
+                    </label>
+                </form>
+            </section>
+
+            <section id="betaling4">
+                <h2>4. BETALING</h2>
+                <form>
+                    <fieldset>
+                        <legend>BETAL MED KORT</legend>
+                        <label>
+                            Kortnummer
+                            <input type="tel" maxlength="20" required placeholder="342342****4435">
+                        </label>
+                        <label>
+                            Utløpsdato
+                            <input type="date">
+                        </label>
+                        <label>
+                            CVC/CVV
+                            <input type="tel" maxlength="3" required placeholder="CVC/CVV" >
+                        </label>
+                        <p>Å betale inkl. mva.</p>
+                        <p>1 199 kr</p>
+                        <a href="#">Fullfør kjøp</a> <!--knapp-->
+                        <a href="#">Avbryt</a>
+                        <p>Du bekrefter herved at opplysningene og dokumentene du har
+                            oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
+                            retten til å heve eller avslutte avtaleforholdet dersom det foreligger
+                            uriktige eller ufullstendige opplysninger.</p>
+                        <label>
+                            <input type="checkbox" name="nyhet" id="nyhet">
+                            Ja takk! Send nyhetsbrev til meg 
+                        </label>
+                        <label>
+                            <input type="checkbox" name="vilkar" id="vilkar">
+                            Ja, jeg godtar vilkårene
+                        </label>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer id="global_footer">
+            <section id="logo_og_ingress">
+                <a href="index.html">Logo</a>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </section>
+
+            <section id="contact">
+                <h4>Kontakt</h4>
+                <p><span>Adresse:</span> B R A Veien 4, 1753 Halden</p>
+                <p>Telefon: 69 80 00 00</p>
+                <p>E-post: halden@hiof.no</p>
+                <p>Åpningstider: Stenger 15:00</p>
+            </section>
+
+            <section id="snarvei">
+                <h4>Snarveier</h4>
+                <a href="#popular_products">Produkter</a>
+                <a href="#popular_categories">Kategorier</a>
+                <a href="#global_footer">Kontakt Oss</a>
+            </section>
+
+            <section id="sosiale_medier">
+                <h4>Sosiale medier</h4>
+                <a href="index.html"><i class="fa-brands fa-instagram"></i></a>
+                <a href="index.html"><i class="fa-brands fa-facebook"></i></a>
+                <a href="index.html"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="index.html"><i class="fa-brands fa-pinterest"></i></a>
+            </section>
+        </footer>
+    </div>
 </body>
 </html>
