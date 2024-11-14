@@ -12,13 +12,15 @@
     <link href="CSS/main.css" rel="stylesheet">
 </head>
 <body>
-    <div id="grid_container">
+    <div id="index_grid">
         <header id="globalheader">
             <nav>
                 <form>
                     <label aria-label="Søk">
                         <input type="search" placeholder="Søk her">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
                     </label>
                 </form>
                 <ul class="main_nav">
@@ -48,7 +50,7 @@
                 <h2>Våre mest populære produkter</h2>
                 <p>Oppdag det beste av det beste</p>
                 <ul>
-                    <li><a href="#">New Product</a></li>
+                    <li><a href="#" class="black_btn">New Product</a></li>
                     <li><a href="#">Special Price</a></li>
                     <li><a href="#">Best Sellers</a></li>
                 </ul>
@@ -151,7 +153,7 @@
 
             <section id="contact">
                 <h4>Kontakt</h4>
-                <p><span>Adresse:</span> B R A Veien 4, 1753 Halden</p>
+                <p>Adresse: B R A Veien 4, 1753 Halden</p>
                 <p>Telefon: 69 80 00 00</p>
                 <p>E-post: halden@hiof.no</p>
                 <p>Åpningstider: Stenger 15:00</p>
@@ -159,9 +161,13 @@
 
             <section id="snarvei">
                 <h4>Snarveier</h4>
-                <a href="#popular_products">Produkter</a>
-                <a href="#popular_categories">Kategorier</a>
-                <a href="#global_footer">Kontakt Oss</a>
+                <nav>
+                    <ul>
+                        <li><a href="#popular_products">Produkter</a></li>
+                        <li><a href="#popular_categories">Kategorier</a></li>
+                        <li><a href="#global_footer">Kontakt Oss</a></li>
+                    </ul>
+                </nav>
             </section>
 
             <section id="sosiale_medier">
