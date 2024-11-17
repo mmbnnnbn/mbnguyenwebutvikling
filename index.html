@@ -12,7 +12,7 @@
     <link href="CSS/main.css" rel="stylesheet">
 </head>
 <body>
-    <div id="index_grid">
+    <div id="grid">
         <header id="globalheader">
             <nav>
                 <form>
@@ -23,7 +23,7 @@
                         </button>
                     </label>
                 </form>
-                <ul class="main_nav">
+                <ul id="main_nav">
                     <li><a href="index.html">Hjem</a></li>
                     <li><a href="#popular_products">Produkter</a></li>
                     <li><a href="index.html" id="logo">Logo</a></li>
@@ -31,7 +31,7 @@
                     <li><a href="#global_footer">Kontakt Oss</a></li>
                 </ul>
 
-                <ul class="header_icons">
+                <ul id="header_icons">
                     <li><i class="fa-regular fa-user"></i></li>
                     <li><i class="fa-regular fa-heart"></i></li>
                     <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
@@ -48,7 +48,6 @@
             </section>
             <section id="popular_products">
                 <h2>Våre mest populære produkter</h2>
-                <p>Oppdag det beste av det beste</p>
                 <ul>
                     <li><a href="#" class="black_btn">New Product</a></li>
                     <li><a href="#">Special Price</a></li>
@@ -115,8 +114,7 @@
 
             <section id="reviews">
                     <h2>Anmeldelser</h2>
-               
-                
+                <div id="article_container">
                 <article>
                     <img src="https://picsum.photos/200" alt="Sirkel bilde av hund">
                     <h4>Rober Labrador</h4>
@@ -141,7 +139,7 @@
                     <!--stjerner-->
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </article>
-
+                </div>
             </section>
         </main>
 
@@ -172,10 +170,18 @@
 
             <section id="sosiale_medier">
                 <h4>Sosiale medier</h4>
-                <a href="index.html"><i class="fa-brands fa-instagram"></i></a>
-                <a href="index.html"><i class="fa-brands fa-facebook"></i></a>
-                <a href="index.html"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="index.html"><i class="fa-brands fa-pinterest"></i></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="index.html"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="index.html"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="index.html"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                </nav>
+                
+            
+                
+                
             </section>
         </footer>
     </div>
