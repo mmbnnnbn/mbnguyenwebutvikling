@@ -48,7 +48,23 @@
                     <h3>Product name</h3>
                     <p>Kr 1999</p>
                     <p>Farge: Beige</p>
-                    <!--mer (str)-->
+                    <form>
+                        <label for="size">Størrelse</label>
+                        <select name="size" id="size" required>
+                            <option value="" disabled selected>Pick your size</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label>
+                            Antall
+                            <input type="number" id="antall" min="1" max="99" value="1">
+                        </label>
+                        <button type="button"><i class="fa-regular fa-heart"></i></button>
+                        <button type="button"><i class="fa-solid fa-trash"></i></button>
+                    </form>
                     </section>
                 </article>
                 <article>
@@ -57,7 +73,23 @@
                     <h3>Product name</h3>
                     <p>Kr 1999</p>
                     <p>Farge: Beige</p>
-                    <!--mer (str)-->
+                    <form>
+                        <label for="size">Størrelse</label>
+                        <select name="size" id="size" required>
+                            <option value="" disabled selected>Pick your size</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label>
+                            Antall
+                            <input type="number" id="antall" min="1" max="99" value="1">
+                        </label>
+                        <button type="button"><i class="fa-regular fa-heart"></i></button>
+                        <button type="button"><i class="fa-solid fa-trash"></i></button>
+                    </form>
                 </section>
                 </article>
             </section>
@@ -122,7 +154,7 @@
                 <h2>4. BETALING</h2>
                 <form>
                     <fieldset>
-                        <legend>BETAL MED KORT</legend>
+                        <legend>BETAL MED KORT <i class="fa-solid fa-credit-card"></i></legend>
                         <label id="label_kortnummer">
                             Kortnummer
                             <input type="tel" maxlength="20" required placeholder="342342****4435" class="betkort">
@@ -164,10 +196,10 @@
 
             <section id="contact">
                 <h4>Kontakt</h4>
-                <p>Adresse: B R A Veien 4, 1753 Halden</p>
-                <p>Telefon: 69 80 00 00</p>
-                <p>E-post: halden@hiof.no</p>
-                <p>Åpningstider: Stenger 15:00</p>
+                <p><i class="fa-solid fa-location-dot"></i> Adresse: B R A Veien 4, 1753 Halden</p>
+                <p><i class="fa-solid fa-phone"></i> Telefon: 69 80 00 00</p>
+                <p><i class="fa-solid fa-envelope"></i> E-post: halden@hiof.no</p>
+                <p><i class="fa-solid fa-clock"></i> Åpningstider: Stenger 15:00</p>
             </section>
 
             <section id="snarvei">
