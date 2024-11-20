@@ -11,16 +11,15 @@
         <link href="ikoner/fontawesome-free-6.6.0-web/css/regular.css" rel="stylesheet">
         <link rel="stylesheet" href="CSS/main.css">
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/ClothingStore">
     <div id="grid">
+        <a href="#product_article" id="skip_to_content_button">Hopp til hoved</a>
         <header id="globalheader">
             <nav>
                 <form>
                     <label aria-label="Søk">
                         <input type="search" placeholder="Søk her">
-                        <button type="submit">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
                     </label>
                 </form>
                 <ul id="main_nav">
@@ -88,7 +87,7 @@
                     </details>
                     <details>
                         <summary>Størrelsestabell</summary>
-                        <p><p>Maecenas fringilla imperdiet ligula facilisis dapibus.</p></p>
+                        <p>Maecenas fringilla imperdiet ligula facilisis dapibus.</p>
                         <table>
                             <thead>
                                 <tr>
@@ -254,25 +253,27 @@
         </main>
         <footer id="global_footer">
             <section id="logo_og_ingress">
-                <a href="index.html">Logo</a>
+                <a href="index.html" itemprop="logo">Logo</a>
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </section>
 
             <section id="contact">
                 <h4>Kontakt</h4>
-                <p><i class="fa-solid fa-location-dot"></i> Adresse: B R A Veien 4, 1753 Halden</p>
-                <p><i class="fa-solid fa-phone"></i> Telefon: 69 80 00 00</p>
-                <p><i class="fa-solid fa-envelope"></i> E-post: halden@hiof.no</p>
-                <p><i class="fa-solid fa-clock"></i> Åpningstider: Stenger 15:00</p>
+                <p itemprop="address"><i class="fa-solid fa-location-dot"></i> Adresse: B R A Veien 4, 1753 Halden</p>
+                <p itemprop="telephone"><i class="fa-solid fa-phone"></i> Telefon: 69 80 00 00</p>
+                <p itemprop="email"><i class="fa-solid fa-envelope"></i> E-post: halden@hiof.no</p>
+                <p itemprop="openingHours"><i class="fa-solid fa-clock"></i> Åpningstider: Stenger 15:00</p>
             </section>
 
             <section id="snarvei">
                 <h4>Snarveier</h4>
                 <nav>
                     <ul>
-                        <li><a href="#popular_products">Produkter</a></li>
-                        <li><a href="#popular_categories">Kategorier</a></li>
+                        <li><a href="index.html#popular_products">Produkter</a></li>
+                        <li><a href="index.html#popular_categories">Kategorier</a></li>
                         <li><a href="#global_footer">Kontakt Oss</a></li>
+                        <li><a href="WCAG.pdf.pdf">WCAG</a></li>
+                        <li><a href="#globalheader">Tilbake til toppen</a></li>
                     </ul>
                 </nav>
             </section>

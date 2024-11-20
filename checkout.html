@@ -11,23 +11,22 @@
     <link href="ikoner/fontawesome-free-6.6.0-web/css/regular.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/main.css">
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/ClothingStore">
     <div id="grid">
+        <a href="#h1_checkout" id="skip_to_content_button">Hopp til hoved</a>
         <header id="globalheader">
             <nav>
                 <form>
                     <label aria-label="Søk">
                         <input type="search" placeholder="Søk her">
-                        <button type="submit">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
                     </label>
                 </form>
                 <ul id="main_nav">
                     <li><a href="index.html">Hjem</a></li>
-                    <li><a href="#popular_products">Produkter</a></li>
-                    <li><a href="index.html" id="logo">Logo</a></li>
-                    <li><a href="#popular_categories">Kategorier</a></li>
+                    <li><a href="index.html#popular_products">Produkter</a></li>
+                    <li><a href="index.html" id="logo" itemprop="logo">Logo</a></li>
+                    <li><a href="index.html#popular_categories">Kategorier</a></li>
                     <li><a href="#global_footer">Kontakt Oss</a></li>
                 </ul>
 
@@ -43,39 +42,47 @@
             <section id="shoppingbag" class="sectionborder">
                 <h2>1. SHOPPINGBAGEN DIN</h2>
                 <article>
-                    <img src="https://picsum.photos/200/300" alt="produkt">
+                    <img src="bilder/shoe.jpg.jpg" alt="Sko produkt">
+                    <!--Image by <a href="https://pixabay.com/users/pezibear-526143/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=682218">Petra</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=682218">Pixabay</a>-->
                     <section>
                     <h3>Product name</h3>
                     <p>Kr 1999</p>
                     <p>Farge: Beige</p>
                     <form>
-                        <label for="size">Størrelse</label>
-                        <select name="size" id="size" required>
-                            <option value="" disabled selected>Pick your size</option>
-                            <option value="XS">XS</option>
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                            <option value="XL">XL</option>
-                        </select>
-                        <label>
+                        <section>
+                            <label>Størrelse
+                                <select name="size" required>
+                                    <option value="" disabled selected>Pick your size</option>
+                                    <option value="XS">XS</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </label>
+                            <label>
                             Antall
-                            <input type="number" id="antall" min="1" max="99" value="1">
+                            <input type="number" min="1" max="99" value="1">
                         </label>
+                        </section>
+                        <section>
                         <button type="button"><i class="fa-regular fa-heart"></i></button>
                         <button type="button"><i class="fa-solid fa-trash"></i></button>
+                        </section>
                     </form>
                     </section>
                 </article>
                 <article>
-                    <img src="https://picsum.photos/200/300" alt="produkt">
-                <section>
+                    <img src="bilder/shoe.jpg.jpg" alt="Sko produkt">
+                    <!--Image by <a href="https://pixabay.com/users/pezibear-526143/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=682218">Petra</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=682218">Pixabay</a>-->
+                    <section>
                     <h3>Product name</h3>
                     <p>Kr 1999</p>
                     <p>Farge: Beige</p>
                     <form>
-                        <label for="size">Størrelse</label>
-                        <select name="size" id="size" required>
+                        <section>
+                        <label>Størrelse
+                        <select name="size" required>
                             <option value="" disabled selected>Pick your size</option>
                             <option value="XS">XS</option>
                             <option value="S">S</option>
@@ -83,14 +90,18 @@
                             <option value="L">L</option>
                             <option value="XL">XL</option>
                         </select>
+                    </label>
                         <label>
                             Antall
-                            <input type="number" id="antall" min="1" max="99" value="1">
+                            <input type="number" min="1" max="99" value="1">
                         </label>
+                        </section>
+                        <section>
                         <button type="button"><i class="fa-regular fa-heart"></i></button>
                         <button type="button"><i class="fa-solid fa-trash"></i></button>
+                        </section>
                     </form>
-                </section>
+                    </section>
                 </article>
             </section>
 
@@ -125,11 +136,11 @@
                         <legend>Kontaktinformasjon</legend>
                         <label id="epost">
                             E-post
-                            <input type="email" required placeholder="Noranordmann@hiof.no*">
+                            <input type="email" required placeholder="Noranordmann@hiof.no*" maxlength="40">
                         </label>
                         <label id="telefon">
                             Telefon
-                            <input type="text" required placeholder="+471234**78">
+                            <input type="text" required placeholder="+471234**78" maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                         </label>
                     </fieldset>
                     <a href="#" class="black_btn">Lagre</a>
@@ -190,25 +201,27 @@
         </main>
         <footer id="global_footer">
             <section id="logo_og_ingress">
-                <a href="index.html">Logo</a>
+                <a href="index.html" itemprop="logo">Logo</a>
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </section>
 
             <section id="contact">
                 <h4>Kontakt</h4>
-                <p><i class="fa-solid fa-location-dot"></i> Adresse: B R A Veien 4, 1753 Halden</p>
-                <p><i class="fa-solid fa-phone"></i> Telefon: 69 80 00 00</p>
-                <p><i class="fa-solid fa-envelope"></i> E-post: halden@hiof.no</p>
-                <p><i class="fa-solid fa-clock"></i> Åpningstider: Stenger 15:00</p>
+                <p itemprop="address"><i class="fa-solid fa-location-dot"></i> Adresse: B R A Veien 4, 1753 Halden</p>
+                <p itemprop="telephone"><i class="fa-solid fa-phone"></i> Telefon: 69 80 00 00</p>
+                <p itemprop="email"><i class="fa-solid fa-envelope"></i> E-post: halden@hiof.no</p>
+                <p itemprop="openingHours"><i class="fa-solid fa-clock"></i> Åpningstider: Stenger 15:00</p>
             </section>
 
             <section id="snarvei">
                 <h4>Snarveier</h4>
                 <nav>
                     <ul>
-                        <li><a href="#popular_products">Produkter</a></li>
-                        <li><a href="#popular_categories">Kategorier</a></li>
+                        <li><a href="index.html#popular_products">Produkter</a></li>
+                        <li><a href="index.html#popular_categories">Kategorier</a></li>
                         <li><a href="#global_footer">Kontakt Oss</a></li>
+                        <li><a href="WCAG.pdf.pdf">WCAG</a></li>
+                        <li><a href="#globalheader">Tilbake til toppen</a></li>
                     </ul>
                 </nav>
             </section>

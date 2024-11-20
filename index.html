@@ -11,22 +11,21 @@
     <link href="ikoner/fontawesome-free-6.6.0-web/css/regular.css" rel="stylesheet">
     <link href="CSS/main.css" rel="stylesheet">
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/ClothingStore">
     <div id="grid">
+        <a href="#popular_products" id="skip_to_content_button">Hopp til hoved</a>
         <header id="globalheader">
             <nav>
                 <form>
                     <label aria-label="Søk">
                         <input type="search" placeholder="Søk her">
-                        <button type="submit">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
                     </label>
                 </form>
                 <ul id="main_nav">
                     <li><a href="index.html">Hjem</a></li>
                     <li><a href="#popular_products">Produkter</a></li>
-                    <li><a href="index.html" id="logo">Logo</a></li>
+                    <li><a href="index.html" id="logo" itemprop="logo">Logo</a></li>
                     <li><a href="#popular_categories">Kategorier</a></li>
                     <li><a href="#global_footer">Kontakt Oss</a></li>
                 </ul>
@@ -46,27 +45,30 @@
                 <section id="slide_container">
                     <article class="slide_article">
                         <header>
-                            <h3>Test 1</h3>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <h1 itemprop="name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                             <a href="">Les mer</a>
                         </header>  
-                        <img src="https://picsum.photos/500" alt="produktkort">                                                                                           
+                        <img src="bilder/mannequin.jpg.jpg" alt="Banner bilde"> 
+                        <!--Image by <a href="https://pixabay.com/users/wal_172619-12138562/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7190001">wal_172619</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7190001">Pixabay</a>-->                                                                                          
                     </article>
-                    <article class="slide_article">
+                    <article class="slide_article hidden_mobile">
                         <header>        
-                            <h3>Test 1</h3>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                             <a href="">Les mer</a>
                         </header>  
-                        <img src="https://picsum.photos/500" alt="produktkort">           
+                        <img src="bilder/mannequin.jpg.jpg" alt="Banner bilde">     
+                        <!--Image by <a href="https://pixabay.com/users/wal_172619-12138562/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7190001">wal_172619</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7190001">Pixabay</a>-->                                                                             
                     </article>
-                    <article class="slide_article">
+                    <article class="slide_article hidden_mobile">
                         <header>        
-                            <h3>Test 1</h3>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                             <a href="">Les mer</a>
                         </header>  
-                        <img src="https://picsum.photos/500" alt="produktkort">                       
+                        <img src="bilder/mannequin.jpg.jpg" alt="Banner bilde">       
+                        <!--Image by <a href="https://pixabay.com/users/wal_172619-12138562/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7190001">wal_172619</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7190001">Pixabay</a>-->                                                                                       
                     </article>
                 </section>
             </section>
@@ -82,37 +84,37 @@
                     <img src="https://picsum.photos/500" alt="produktkort">
                     <h3><a href="product.html">Productname</a></h3>
                     <p>Kr 1999</p>
-                    <p class="rating">★ ★ ★ ★ ☆ 842 reviews</p>
+                    <p class="rating" >★ ★ ★ ★ ☆ 842 reviews</p>
                 </article>
                 <article class="product_card shrink_grow">
                     <img src="https://picsum.photos/500" alt="produktkort">
                     <h3><a href="product.html">Productname</a></h3>
                     <p>Kr 1999</p>
-                    <p class="rating">★ ★ ★ ★ ☆ 842 reviews</p>
+                    <p class="rating" >★ ★ ★ ★ ☆ 842 reviews</p>
                 </article>
                 <article class="product_card shrink_grow"> 
                     <img src="https://picsum.photos/500" alt="produktkort">
                     <h3><a href="product.html">Productname</a></h3>
                     <p>Kr 1999</p>
-                    <p class="rating">★ ★ ★ ★ ☆ 842 reviews</p>
+                    <p class="rating" >★ ★ ★ ★ ☆ 842 reviews</p>
                 </article>
                 <article class="product_card shrink_grow">
                     <img src="https://picsum.photos/500" alt="produktkort">
                     <h3><a href="product.html">Productname</a></h3>
                     <p>Kr 1999</p>
-                    <p class="rating">★ ★ ★ ★ ☆ 842 reviews</p>
+                    <p class="rating" >★ ★ ★ ★ ☆ 842 reviews</p>
                 </article>
                 <article class="product_card shrink_grow">
                     <img src="https://picsum.photos/500" alt="produktkort">
                     <h3><a href="product.html">Productname</a></h3>
                     <p>Kr 1999</p>
-                    <p class="rating">★ ★ ★ ★ ☆ 842 reviews</p>
+                    <p class="rating" >★ ★ ★ ★ ☆ 842 reviews</p>
                 </article>
                 <article class="product_card shrink_grow">
                     <img src="https://picsum.photos/500" alt="produktkort">
                     <h3><a href="product.html">Productname</a></h3>
                     <p>Kr 1999</p>
-                    <p class="rating">★ ★ ★ ★ ☆ 842 reviews</p>
+                    <p class="rating" >★ ★ ★ ★ ☆ 842 reviews</p>
                 </article>
             </section>
 
@@ -145,29 +147,33 @@
             <section id="reviews">
                     <h2>Anmeldelser</h2>
                 <div id="article_container">
-                <article>
-                    <img src="https://picsum.photos/200" alt="Sirkel bilde av hund">
-                    <h4>Rober Labrador</h4>
+                <article >
+                    <img src="bilder/shoe.jpg.jpg" alt="Sko produkt anmeldelse">
+                    <!--Image by <a href="https://pixabay.com/users/pezibear-526143/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=682218">Petra</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=682218">Pixabay</a>-->
+                    <h4 >Rober Labrador</h4>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <p class="rating">★ ★ ★ ★ ☆</p>
+                    <p class="rating" >★ ★ ★ ★ ☆</p>
                 </article>
-                <article>
-                    <img src="https://picsum.photos/200" alt="Sirkel bilde av hund">
-                    <h4>Rober Labrador</h4>                    
+                <article >
+                    <img src="bilder/shoe.jpg.jpg" alt="Sko produkt anmeldelse">
+                    <!--Image by <a href="https://pixabay.com/users/pezibear-526143/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=682218">Petra</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=682218">Pixabay</a>-->
+                    <h4 >Rober Labrador</h4>                    
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <p class="rating">★ ★ ★ ★ ☆</p>
+                    <p class="rating" >★ ★ ★ ★ ☆</p>
                 </article>
-                <article>
-                    <img src="https://picsum.photos/200" alt="Sirkel bilde av hund">
-                    <h4>Rober Labrador</h4>                   
+                <article >
+                    <img src="bilder/shoe.jpg.jpg" alt="Sko produkt anmeldelse">
+                    <!--Image by <a href="https://pixabay.com/users/pezibear-526143/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=682218">Petra</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=682218">Pixabay</a>-->
+                    <h4 >Rober Labrador</h4>                   
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <p class="rating">★ ★ ★ ★ ☆</p>
+                    <p class="rating" >★ ★ ★ ★ ☆</p>
                 </article>
-                <article>
-                    <img src="https://picsum.photos/200" alt="Sirkel bilde av hund">
-                    <h4>Rober Labrador</h4>                    
+                <article >
+                    <img src="bilder/shoe.jpg.jpg" alt="Sko produkt anmeldelse">
+                    <!--Image by <a href="https://pixabay.com/users/pezibear-526143/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=682218">Petra</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=682218">Pixabay</a>-->
+                    <h4 >Rober Labrador</h4>                    
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <p class="rating">★ ★ ★ ★ ☆</p>
+                    <p class="rating" >★ ★ ★ ★ ☆</p>
                 </article>
                 </div>
             </section>
@@ -175,16 +181,16 @@
 
         <footer id="global_footer">
             <section id="logo_og_ingress">
-                <a href="index.html">Logo</a>
+                <a href="index.html" itemprop="logo">Logo</a>
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </section>
 
             <section id="contact">
                 <h4>Kontakt</h4>
-                <p><i class="fa-solid fa-location-dot"></i> Adresse: B R A Veien 4, 1753 Halden</p>
-                <p><i class="fa-solid fa-phone"></i> Telefon: 69 80 00 00</p>
-                <p><i class="fa-solid fa-envelope"></i> E-post: halden@hiof.no</p>
-                <p><i class="fa-solid fa-clock"></i> Åpningstider: Stenger 15:00</p>
+                <p itemprop="address"><i class="fa-solid fa-location-dot"></i> Adresse: B R A Veien 4, 1753 Halden</p>
+                <p itemprop="telephone"><i class="fa-solid fa-phone"></i> Telefon: 69 80 00 00</p>
+                <p itemprop="email"><i class="fa-solid fa-envelope"></i> E-post: halden@hiof.no</p>
+                <p itemprop="openingHours"><i class="fa-solid fa-clock"></i> Åpningstider: Stenger 15:00</p>
             </section>
 
             <section id="snarvei">
@@ -194,6 +200,8 @@
                         <li><a href="#popular_products">Produkter</a></li>
                         <li><a href="#popular_categories">Kategorier</a></li>
                         <li><a href="#global_footer">Kontakt Oss</a></li>
+                        <li><a href="WCAG.pdf.pdf">WCAG</a></li>
+                        <li><a href="#globalheader">Tilbake til toppen</a></li>
                     </ul>
                 </nav>
             </section>

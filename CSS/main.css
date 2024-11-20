@@ -66,6 +66,15 @@ p,a{font-size: 1rem;}
         flex-wrap: wrap;
         flex-direction: column;
         background-color: gray;
+        max-width: 100%;
+        height: 450px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+
+        .fa-solid, h2 {
+            display: none;
+        }
     
         a {
             text-decoration: none;
@@ -76,13 +85,62 @@ p,a{font-size: 1rem;}
             margin: 2px;
             font-size: 10px;
             max-width: 100px;
-            
+    }
+}
+
+    .hidden_mobile, #skip_to_content_button {
+        display: none;
+    }
+
+    #slide_container {
+        display: flex;
+        flex-direction: row;
+        max-width: 600px;
+    }
+
+    .slide_article {
+        max-width: 100%;
+        width: 800px;
+        height: 400px;
+        position: relative;
+    
+        header {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: center;
+
+            h1, h3 {
+                width: 300px;
+            }
+
+            p {
+                width: 400px;
+            }
+
+            a {
+                padding: 1rem;
+                border: 1px solid black;
+                background-color: white;
+                border-radius: 30px;
+                width: 100px;
+                text-decoration: none;
+                color: black;
+            }
+
+            h1, h3, p, a {
+                margin-right: 3rem;
+            }
         }
-        h2, p {
-        
-        }
-        img {
-            
+    
+        img{
+            border-radius: 10px;
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
         }
     }
 
@@ -387,9 +445,33 @@ p,a{font-size: 1rem;}
 
 /*---------------Desktop---------------------------------------------*/
 
+
+
+
 /*Grid for nettsidene*/
 
 @media only screen and (min-width: 800px) {
+
+
+    /*Arbeidskrav A*/
+    a, button {
+        cursor: pointer;
+    }
+
+    #skip_to_content_button {
+        position: absolute;
+        top: -100px;
+        left: 100px;
+        padding: 2rem;
+        border: 2px solid black;
+        
+    }
+
+    #skip_to_content_button:focus {
+        top: 10px;
+        left: 40px;
+        
+    }
 
     #grid {
         display: grid;
@@ -432,6 +514,25 @@ p,a{font-size: 1rem;}
         display: flex;
         flex-direction: row;
         justify-content: center;
+        position: relative;
+
+        .fa-solid {
+            position: absolute;
+            background-color: #cbb;
+            border-radius: 60px;
+            font-size: 20px;
+            padding: 1rem;
+        }
+
+        .fa-arrow-left {
+            left: 143px;
+            bottom: 221px;
+        }
+
+        .fa-arrow-right {
+            right: 143px;
+            bottom: 221px;
+        }
 
      
         h2 {
@@ -440,15 +541,15 @@ p,a{font-size: 1rem;}
     }
 
     #slide_container {
+        margin-top: 2rem;
         display: flex;
         flex-direction: row;
-        padding-bottom: 2rem;
-        border-bottom: 1px solid black;
+        padding-bottom: 1rem;
         width: 100%;
         max-width: 800px;
         border-radius: 10px;
         overflow-x: auto;
-
+        position: relative;
     }
 
     .slide_article {
@@ -464,6 +565,32 @@ p,a{font-size: 1rem;}
             width: 100%;
             height: 100%;
             position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: center;
+
+            h1, h3 {
+                width: 300px;
+            }
+
+            p {
+                width: 400px;
+            }
+
+            a {
+                padding: 1rem;
+                border: 1px solid black;
+                background-color: white;
+                border-radius: 30px;
+                width: 100px;
+                text-decoration: none;
+                color: black;
+            }
+
+            h1, h3, p, a {
+                margin-right: 2rem;
+            }
         }
     
         img{
@@ -473,11 +600,7 @@ p,a{font-size: 1rem;}
             height: 100%;
         }
     }
-    .slide_article header h3, .slide_article header a, .slide_article header p {
-        text-decoration: none;
-        color: black;
-        
-    }
+
     
     #popular_products h2, #popular_products ul{
      
@@ -873,11 +996,6 @@ p,a{font-size: 1rem;}
         border-radius: 10px;
         margin-right: 0.2rem;
     }
-
-    label button {
-        border: none;
-        background: none;
-    }
 }
 
 #logo {
@@ -895,7 +1013,7 @@ p,a{font-size: 1rem;}
     }
 }
 
-/*banner var her*/
+
 
 #popular_products {
     display: flex;
@@ -1189,6 +1307,49 @@ aside {
 }
 
 /*Checkout begge*/
+
+
+#shoppingbag {
+    img {
+        max-width: 300px;
+        height: 300px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        
+
+        .hide {
+            display: none;
+        }
+
+        section label input,  section select{
+            border: 1px solid black;
+            height: 35px;
+            background-color: white;
+        }
+
+        section {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-left: 0;
+            justify-content: start;
+
+            button {
+                width: 50px;
+                height: 35px;
+                border: none;
+                background-color: white;
+            
+            }
+        }
+    }
+}
+
 .sectionborder { 
     display: flex;
     flex-direction: column;
